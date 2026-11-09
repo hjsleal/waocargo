@@ -1,0 +1,169 @@
+/* WAO CARGO — waocargo.com — DRAFT styles
+   Spec: waocargo_site_instructions.md / waocargo_site_instructions-2.md (user, 2026-11-08)
+   Font SUSE · Primary #0e0e34 · Secondary #fc410e · Backgrounds #eeeeee / #272727
+   Footer background #eeeeee (spec wrote "#eeeee" — 5 digits, invalid; using #eeeeee)
+   Footer font colour: spec wrote "#9999A" (invalid); using #99999a as closest valid value.
+*/
+:root {
+  --primary: #0e0e34;
+  --secondary: #fc410e;
+  --light-bg: #eeeeee;
+  --dark-bg: #272727;
+  --footer-bg: #eeeeee;
+  --footer-text: #99999a;
+  --white: #ffffff;
+  --ink: #1a1a2e;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'SUSE', 'Segoe UI', system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--white);
+  line-height: 1.6;
+}
+a { color: var(--secondary); }
+img { max-width: 100%; height: auto; }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* ---- Fixed header, primary colour ---- */
+.site-header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: var(--primary); color: var(--white);
+}
+.header-inner {
+  max-width: 1100px; margin: 0 auto; padding: 10px 20px;
+  display: flex; align-items: center; gap: 24px;
+}
+.brand { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; text-decoration: none; color: var(--white); }
+.brand img { height: 130px; width: auto; }
+.brand-slogan { color: var(--secondary); font-size: 1rem; font-weight: 600; line-height: 1.2; }
+.brand-name { font-weight: 800; letter-spacing: .04em; font-size: 1.25rem; }
+.main-nav { margin-left: auto; display: flex; align-items: center; gap: 4px; }
+.main-nav a, .main-nav .drop-btn {
+  color: var(--white); text-decoration: none; background: none; border: 0;
+  font: inherit; font-size: 1rem; padding: 8px 12px; cursor: pointer;
+}
+.main-nav a:hover, .main-nav .drop-btn:hover { color: var(--secondary); }
+.dropdown { position: relative; }
+.dropdown-menu {
+  display: none; position: absolute; top: 100%; left: 0; min-width: 200px;
+  background: var(--primary); padding: 6px 0; box-shadow: 0 8px 24px rgba(0,0,0,.3);
+}
+.dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu { display: block; }
+.dropdown-menu a { display: block; padding: 8px 16px; }
+.lang-switch { display: flex; gap: 4px; margin-left: 12px; }
+.lang-switch button {
+  background: transparent; color: var(--white); border: 1px solid rgba(255,255,255,.4);
+  font: inherit; font-size: .85rem; padding: 4px 8px; cursor: pointer;
+}
+.lang-switch button.active, .lang-switch button:hover { background: var(--secondary); border-color: var(--secondary); }
+main { padding-top: 180px; }
+
+/* ---- Buttons: 0px radius, 15px right border in opposite colour, hover swaps ---- */
+.btn {
+  display: inline-block; text-decoration: none; font-weight: 700; font-size: 1rem;
+  padding: 12px 28px; border-radius: 0; cursor: pointer;
+  border-top: 0; border-bottom: 0; border-left: 0; border-right: 15px solid;
+  transition: background-color .2s, border-right-color .2s, color .2s;
+}
+/* Primary button on light background: primary bg, secondary right border */
+.btn-primary { background: var(--primary); color: var(--white); border-right-color: var(--secondary); }
+.btn-primary:hover { background: var(--secondary); border-right-color: var(--primary); }
+/* Secondary button on light background: secondary bg, primary right border */
+.btn-secondary { background: var(--secondary); color: var(--white); border-right-color: var(--primary); }
+.btn-secondary:hover { background: var(--primary); border-right-color: var(--secondary); }
+/* Primary button on dark background: secondary bg, primary right border */
+.on-dark .btn-primary { background: var(--secondary); border-right-color: var(--primary); }
+.on-dark .btn-primary:hover { background: var(--primary); border-right-color: var(--secondary); }
+/* Secondary button on dark background: primary bg, secondary right border */
+.on-dark .btn-secondary { background: var(--primary); color: var(--white); border-right-color: var(--secondary); }
+.on-dark .btn-secondary:hover { background: var(--secondary); border-right-color: var(--primary); }
+/* Outlined buttons */
+.btn-outline-light { background: transparent; color: var(--primary); border: 1px solid var(--primary); border-right: 15px solid var(--primary); }
+.btn-outline-light:hover { background: var(--primary); color: var(--white); }
+.on-dark .btn-outline-dark { background: transparent; color: var(--secondary); border: 1px solid var(--secondary); border-right: 15px solid var(--secondary); }
+.on-dark .btn-outline-dark:hover { background: var(--secondary); color: var(--white); }
+
+/* ---- Sections ---- */
+section { padding: 64px 0; }
+section.on-dark { background: var(--dark-bg); color: var(--white); }
+section.on-light { background: var(--light-bg); }
+section h2 { font-size: 1.9rem; margin-bottom: 12px; color: var(--primary); }
+section.on-dark h2 { color: var(--white); }
+section h2 .accent { color: var(--secondary); }
+.lead { font-size: 1.15rem; max-width: 720px; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 32px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 32px; }
+.card { background: var(--white); padding: 24px; border-top: 4px solid var(--secondary); }
+.on-dark .card { background: #33333d; color: var(--white); }
+.card h3 { color: var(--primary); margin-bottom: 8px; }
+.on-dark .card h3 { color: var(--white); }
+.card .price { font-size: 2rem; font-weight: 800; color: var(--secondary); }
+.checklist { list-style: none; margin-top: 16px; }
+.checklist li { padding: 6px 0 6px 28px; position: relative; }
+.checklist li::before { content: "✓"; position: absolute; left: 0; color: var(--secondary); font-weight: 800; }
+
+/* ---- Hero + animated message ---- */
+.hero { background: var(--primary); color: var(--white); padding: 88px 0 72px; }
+.hero h1 { font-size: 2.6rem; line-height: 1.15; max-width: 720px; }
+.hero h1 .accent { color: var(--secondary); }
+.hero-rotator { margin-top: 20px; font-size: 1.35rem; font-weight: 600; color: var(--secondary); min-height: 2.2em; }
+.hero-rotator .fade { animation: fadeSwap 0.6s ease; display: inline-block; }
+@keyframes fadeSwap { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.hero p.lead { color: rgba(255,255,255,.9); margin-top: 12px; }
+.hero-cta { margin-top: 28px; display: flex; gap: 16px; flex-wrap: wrap; }
+.hero-badges { margin-top: 32px; display: flex; gap: 12px; flex-wrap: wrap; }
+.hero-badges span { border: 1px solid rgba(255,255,255,.35); padding: 6px 12px; font-size: .9rem; }
+
+/* ---- Forms ---- */
+.contact-form { display: grid; gap: 12px; max-width: 560px; margin-top: 24px; }
+.contact-form label { font-weight: 600; }
+.contact-form input, .contact-form select, .contact-form textarea {
+  font: inherit; padding: 10px 12px; border: 1px solid #bbb; border-radius: 0; width: 100%;
+}
+.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus {
+  outline: 2px solid var(--secondary); outline-offset: 0; border-color: var(--secondary);
+}
+
+/* ---- Footer: 4 columns, #eeeeee, links underline + secondary on hover ---- */
+.site-footer { background: var(--footer-bg); color: var(--footer-text); padding: 48px 0 24px; font-size: .95rem; }
+.footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
+.site-footer h4 { color: var(--primary); margin-bottom: 12px; font-size: 1.05rem; }
+.site-footer ul { list-style: none; }
+.site-footer li { margin-bottom: 6px; }
+.site-footer a { color: var(--footer-text); text-decoration: none; }
+.site-footer a:hover { text-decoration: underline; color: var(--secondary); }
+.footer-brand { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; text-align: right; }
+.footer-brand img { height: 130px; width: auto; }
+.footer-brand .company { color: var(--footer-text); font-weight: 400; }
+.social-icons { display: flex; gap: 12px; margin-top: 8px; }
+.social-icons a {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; background: var(--primary); color: var(--white);
+  font-weight: 800; font-size: .8rem; text-decoration: none;
+}
+.social-icons a:hover { background: var(--secondary); color: var(--white); text-decoration: none; }
+.footer-bottom { margin-top: 32px; padding-top: 16px; border-top: 1px solid #d5d5d5; font-size: .85rem; }
+.draft-note {
+  background: #fff3cd; color: #664d03; padding: 10px 14px; font-size: .9rem;
+  border-left: 4px solid var(--secondary); margin: 16px 0;
+}
+@media (max-width: 760px) {
+  .grid-2, .grid-3, .footer-grid { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 1.9rem; }
+  .main-nav { display: none; } /* TODO: mobile menu — see script.js */
+  main { padding-top: 180px; }
+}
+
+/* ---- Splash / language gateway (index.html) ---- */
+main.splash { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 56px; padding: 40px 20px; text-align: center; background: linear-gradient(rgba(14,14,52,.45), rgba(14,14,52,.45)), url("assets/cargo-banner.jpg") center/cover no-repeat var(--dark-bg); }
+.splash-logo { width: min(350px, 80vw); height: auto; }
+.splash-langs { display: flex; gap: 48px; flex-wrap: wrap; justify-content: center; }
+.splash-langs a { display: flex; flex-direction: column; align-items: center; gap: 10px; text-decoration: none; color: var(--white); font-weight: 700; font-size: 1rem; }
+.splash-langs img { width: 76px; height: auto; border-radius: 4px; box-shadow: 0 2px 16px rgba(0,0,0,.45); }
+.splash-langs a:hover span { color: var(--secondary); }
+
+/* ---- Legal pages ---- */
+.legal h3 { color: var(--primary); margin: 28px 0 8px; }
+.legal p { max-width: 780px; }

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAO CARGO — Dispatching &amp; Carrier Support | USA &amp; Canada</title>
+<meta name="description" content="WAO CARGO finds loads, negotiates rates and handles the back office for owner-operators and small fleets — hotshots, box trucks, dry vans, flatbeds and reefers — in the USA and Canada. English, Spanish, French.">
+<!-- TODO (Meta Pixel): paste the Pixel ID from Meta Events Manager here before the Nov 24 launch. -->
+<!-- <script>/* Meta Pixel placeholder — ID not yet created */</script> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=SUSE:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+<!-- Fixed header, primary colour -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="home.html">
+      <img src="assets/logo-dark.svg" alt="WAO CARGO logo">
+      <span class="brand-slogan" data-i18n="slogan">You cargo, our cargo…</span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="home.html" data-i18n="nav_home">Home</a>
+      <div class="dropdown">
+        <button class="drop-btn" type="button" data-i18n="nav_services">Services ▾</button>
+        <div class="dropdown-menu">
+          <a href="pages/to-carriers.html" data-i18n="nav_carriers">To Carriers</a>
+          <a href="pages/to-brokers.html" data-i18n="nav_brokers">To Brokers</a>
+        </div>
+      </div>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="en" class="active">EN</button>
+        <button type="button" data-lang="fr">FR</button>
+        <button type="button" data-lang="es">ES</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero with animated rotating message -->
+  <section class="hero on-dark">
+    <div class="wrap">
+      <h1 data-i18n="hero_title">Your truck keeps moving. <span class="accent">We handle the rest.</span></h1>
+      <div class="hero-rotator" aria-live="polite"><span id="rotator-text" class="fade">We find your loads — you drive.</span></div>
+      <p class="lead" data-i18n="hero_lead">WAO CARGO is your dispatch partner. We find the freight, negotiate the rate, and handle the paperwork — so you can focus on the road. You are, and always will be, our most precious capital.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="pages/onboarding.html" data-i18n="cta_carrier">Become a carrier — start here</a>
+        <a class="btn btn-secondary" href="pages/to-brokers.html" data-i18n="cta_broker">Are you a broker? Work with us</a>
+      </div>
+      <div class="hero-badges">
+        <span>🇺🇸 🇨🇦 USA &amp; Canada</span>
+        <span data-i18n="badge_lang">EN · ES · FR — no extra charge</span>
+        <span data-i18n="badge_noforced">No forced dispatch</span>
+        <span data-i18n="badge_support">24/7 dispatch support</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- For carriers -->
+  <section id="carriers" class="on-light">
+    <div class="wrap">
+      <h2 data-i18n="carriers_h">For <span class="accent">carriers &amp; owner-operators</span></h2>
+      <p class="lead" data-i18n="carriers_p">You drive. We find the loads, negotiate the rate, set up the broker packets, check broker credit, chase detention and layover pay, and help with billing. You accept or refuse every load — nothing is ever forced on you.</p>
+      <div class="grid-2">
+        <div class="card">
+          <h3 data-i18n="carriers_card1_h">What is included</h3>
+          <ul class="checklist">
+            <li data-i18n="carriers_li1">Load search &amp; booking on DAT, Truckstop and 123Loadboard</li>
+            <li data-i18n="carriers_li2">Rate negotiation with brokers</li>
+            <li data-i18n="carriers_li3">Broker packets, rate confirmations &amp; broker credit checks</li>
+            <li data-i18n="carriers_li4">Fuel advances &amp; quick-pay requests</li>
+            <li data-i18n="carriers_li5">Detention / TONU / layover claims</li>
+            <li data-i18n="carriers_li6">Billing assistance &amp; 24/7 dispatch support</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 data-i18n="pricing_h">Simple pricing — no setup fees, no contract</h3>
+          <p><span class="price">9%</span> <span data-i18n="pricing_semi">of gross per load — semis (dry van, reefer, flatbed)</span></p>
+          <p><span class="price">7%</span> <span data-i18n="pricing_hotshot">of gross per load — hotshots &amp; box trucks</span></p>
+          <p data-i18n="pricing_note">Aligned with your revenue: when you earn more, we earn more. Cancel anytime.</p>
+          <p style="margin-top:16px"><a class="btn btn-primary" href="pages/onboarding.html" data-i18n="pricing_cta">See the onboarding checklist</a></p>
+        </div>
+      </div>
+      <p style="margin-top:24px" data-i18n="equip">Equipment we serve: hotshots (35–40 ft) · box trucks · dry vans · flatbeds · reefers</p>
+    </div>
+  </section>
+
+  <!-- For brokers -->
+  <section id="brokers" class="on-dark">
+    <div class="wrap">
+      <h2 data-i18n="brokers_h">For <span class="accent">load brokers</span></h2>
+      <p class="lead" data-i18n="brokers_p">Reliable capacity, verified carriers, clean paperwork. Our carriers run with active MC authority, verified insurance and complete carrier packets — and we answer the phone when a load needs covering.</p>
+      <div class="grid-3">
+        <div class="card"><h3 data-i18n="brokers_c1_h">Verified carriers</h3><p data-i18n="brokers_c1_p">MC authority checked with FMCSA, insurance certificate on file, W-9 and carrier profile complete before the first load.</p></div>
+        <div class="card"><h3 data-i18n="brokers_c2_h">Fast communication</h3><p data-i18n="brokers_c2_p">One point of contact, in English, Spanish or French. Rate confirmations, tracking updates and PODs without chasing.</p></div>
+        <div class="card"><h3 data-i18n="brokers_c3_h">Cross-border ready</h3><p data-i18n="brokers_c3_p">USA–Canada lanes with PARS / PAPS and FAST where needed, for carriers set up to run both sides of the border.</p></div>
+      </div>
+      <p style="margin-top:24px"><a class="btn btn-secondary" href="#contact" data-i18n="brokers_cta">Talk to us about your lanes</a></p>
+    </div>
+  </section>
+
+  <!-- Our platform: QuickManage AI + load boards -->
+  <section id="platform">
+    <div class="wrap">
+      <h2 data-i18n="platform_h">Our <span class="accent">platform</span></h2>
+      <p class="lead" data-i18n="platform_p">We run on QuickManage AI, a modern AI transport management system: it automates load creation, driver updates and broker communication, pulls email, load boards, chats and bank data into one place, and tracks every change for margin and service analytics. We search freight on the three main North American load boards.</p>
+      <div class="grid-3">
+        <div class="card"><h3>QuickManage AI</h3><p data-i18n="platform_qm">Our TMS — AI dispatch software (qm PILOT) for load planning, tracking, documents, billing and payouts, with 100+ integrations: ELDs, load boards, accounting, factoring and fuel cards.</p></div>
+        <div class="card"><h3>DAT One</h3><p data-i18n="platform_dat">North America's largest load board network — the volume leader, with lane rate data to negotiate from a position of strength.</p></div>
+        <div class="card"><h3>Truckstop · 123Loadboard</h3><p data-i18n="platform_ts">Truckstop for flatbed and hotshot freight with broker vetting; 123Loadboard as the strong-value third board for owner-operators.</p></div>
+      </div>
+      <p style="margin-top:16px; font-size:.9rem"><a href="https://www.quickmanage.ai/" target="_blank" rel="noopener">quickmanage.ai</a> — <span data-i18n="platform_note">QuickManage is the software we run on; WAO CARGO is an independent dispatch service, not a broker and not an employer.</span></p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="on-light">
+    <div class="wrap">
+      <h2 data-i18n="contact_h">Contact — <span class="accent">let's talk</span></h2>
+      <p class="lead" data-i18n="contact_p">Tell us about your truck and your lanes. We reply in English, Spanish or French — whichever you prefer.</p>
+      <!-- TODO: wire this form to contact@waocargo.com (form handler / HubSpot form). Until then it opens the visitor's email client. -->
+      <form class="contact-form" action="mailto:contact@waocargo.com" method="post" enctype="text/plain">
+        <label for="f-name" data-i18n="form_name">Your name</label>
+        <input id="f-name" name="Name" type="text" required>
+        <label for="f-type" data-i18n="form_youare">I am a…</label>
+        <select id="f-type" name="I am">
+          <option data-i18n="form_carrier">Carrier / owner-operator</option>
+          <option data-i18n="form_broker">Load broker</option>
+          <option data-i18n="form_other">Other</option>
+        </select>
+        <label for="f-equip" data-i18n="form_equip">Equipment</label>
+        <select id="f-equip" name="Equipment">
+          <option>Hotshot (35–40 ft)</option>
+          <option>Box truck</option>
+          <option>Dry van</option>
+          <option>Flatbed</option>
+          <option>Reefer</option>
+        </select>
+        <label for="f-msg" data-i18n="form_msg">Your message</label>
+        <textarea id="f-msg" name="Message" rows="4"></textarea>
+        <p><button class="btn btn-primary" type="submit" data-i18n="form_send">Send — we reply within one business day</button></p>
+      </form>
+      <p style="margin-top:16px">📧 <a href="mailto:contact@waocargo.com">contact@waocargo.com</a> · 📍 1876 rue Gareau, Longueuil, QC J4N 1E4, Canada · 💬 <a href="https://wa.me/14386388890">WhatsApp +1 (438) 638-8890</a> · <span data-i18n="contact_fb">Find us on Facebook: WAO CARGO</span></p>
+    </div>
+  </section>
+</main>
+
+<!-- Footer: 4 columns + brand/social column -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Context</h4>
+        <ul>
+          <li><a href="pages/freight-market.html">The freight market</a></li>
+          <li><a href="pages/future-of-transport.html">The future of transport</a></li>
+          <li><a href="pages/cftr-quebec.html">The CFTR in Quebec</a></li>
+          <li><a href="pages/regulations.html">Regulations</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Notice</h4>
+        <ul>
+          <li><a href="pages/privacy.html">Privacy</a></li>
+          <li><a href="pages/terms-of-service.html">Terms of service</a></li>
+          <li><a href="pages/web-content.html">Web content</a></li>
+          <li><a href="pages/canada-gov.html">Canada Gov</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="pages/to-carriers.html">To carriers</a></li>
+          <li><a href="pages/to-brokers.html">To brokers</a></li>
+          <li><a href="pages/our-platform.html">Our platform</a></li>
+          <li><a href="pages/payments.html">Payments</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Integration</h4>
+        <ul>
+          <li><a href="pages/onboarding.html">Onboarding</a></li>
+          <li><a href="pages/become-a-partner.html">Become a partner</a></li>
+          <li><a href="pages/operators.html">Operators</a></li>
+          <li><a href="pages/brokers.html">Brokers</a></li>
+          <li><a href="pages/drivers.html">Drivers</a></li>
+        </ul>
+      </div>
+      <div class="footer-brand">
+        <img src="assets/logo-footer.svg" alt="WAO CARGO logo">
+        <span class="company">Wao Cargo Inc.</span>
+        <div class="social-icons">
+          <!-- TODO: replace # with the real Facebook Page and Instagram links -->
+          <a href="#" aria-label="Facebook" title="Facebook (link to add)">f</a>
+          <a href="#" aria-label="Instagram" title="Instagram (link to add)">ig</a>
+          <a href="https://wa.me/14386388890" aria-label="WhatsApp" title="WhatsApp +1 (438) 638-8890">wa</a>
+        </div>
+        <p>1876 rue Gareau, Longueuil, QC J4N 1E4, Canada<br><a href="mailto:contact@waocargo.com">contact@waocargo.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer_copy">© <span id="year">2026</span> WAO CARGO INC — Dispatching &amp; carrier support, USA &amp; Canada. WAO CARGO is an independent dispatch service, not a broker and not an employer.</span>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
