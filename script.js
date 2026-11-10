@@ -41,19 +41,30 @@
       form_send: "Send — we reply within one business day",
       contact_fb: "Find us on Facebook: WAO CARGO",
       footer_copy: "© 2026 WAO CARGO INC — Dispatching & carrier support, USA & Canada. WAO CARGO is an independent dispatch service, not a broker and not an employer.",
-      slogan: "You cargo, our cargo…"
+      slogan: "You cargo, our cargo…",
+      contact_cta: "Open the contact form",
+      cp_h: 'Contact — <span class="accent">let\'s talk</span>',
+      cp_p: "Choose the form that fits you — one for carriers, one for brokers. We reply in English, Spanish or French.",
+      cp_carriers_h: "Carriers & owner-operators",
+      cp_carriers_p: "Tell us about your truck, your equipment and your lanes.",
+      cp_carriers_cta: "Open the carrier form",
+      cp_brokers_h: "Load brokers",
+      cp_brokers_p: "Tell us about the loads you need covered and your lanes.",
+      cp_brokers_cta: "Open the broker form",
+      cookie_text: "We use cookies to improve your visit. Non-essential cookies stay off unless you accept.",
+      cookie_accept: "Accept", cookie_decline: "Decline"
     },
     fr: {
-      nav_home: "Accueil", nav_services: "Services ▾", nav_carriers: "Aux transporteurs", nav_brokers: "Aux brokers", nav_contact: "Contact",
+      nav_home: "Accueil", nav_services: "Services ▾", nav_carriers: "Aux transporteurs", nav_brokers: "Aux courtiers", nav_contact: "Contact",
       hero_title: 'Votre camion continue de rouler. <span class="accent">Nous nous occupons du reste.</span>',
       hero_lead: "WAO CARGO est votre partenaire de dispatch. Nous trouvons le fret, négocions le tarif et gérons la paperasse — pour que vous puissiez vous concentrer sur la route. Vous êtes, et serez toujours, notre capital le plus précieux.",
-      cta_carrier: "Devenir transporteur — commencez ici", cta_broker: "Vous êtes broker? Travaillons ensemble",
+      cta_carrier: "Devenir transporteur — commencez ici", cta_broker: "Vous êtes courtier ? Travaillons ensemble",
       badge_lang: "EN · ES · FR — sans frais supplémentaires", badge_noforced: "Aucun dispatch forcé", badge_support: "Support dispatch 24/7",
       carriers_h: 'Pour les <span class="accent">transporteurs et propriétaires-exploitants</span>',
-      carriers_p: "Vous conduisez. Nous trouvons les chargements, négocions le tarif, préparons les dossiers brokers, vérifions le crédit des brokers, réclamons les frais de détention et d'attente, et aidons à la facturation. Vous acceptez ou refusez chaque chargement — rien ne vous est jamais imposé.",
+      carriers_p: "Vous conduisez. Nous trouvons les chargements, négocions le tarif, préparons les dossiers courtiers, vérifions le crédit des courtiers, réclamons les frais de détention et d'attente, et aidons à la facturation. Vous acceptez ou refusez chaque chargement — rien ne vous est jamais imposé.",
       carriers_card1_h: "Ce qui est inclus",
       carriers_li1: "Recherche et réservation de chargements sur DAT, Truckstop et 123Loadboard",
-      carriers_li2: "Négociation des tarifs avec les brokers", carriers_li3: "Dossiers brokers, confirmations de tarifs et vérification du crédit",
+      carriers_li2: "Négociation des tarifs avec les courtiers", carriers_li3: "Dossiers courtiers, confirmations de tarifs et vérification du crédit",
       carriers_li4: "Avances carburant et paiements rapides", carriers_li5: "Réclamations de détention / TONU / layover",
       carriers_li6: "Aide à la facturation et support dispatch 24/7",
       pricing_h: "Tarification simple — aucun frais d'installation, aucun contrat",
@@ -62,26 +73,37 @@
       pricing_note: "Aligné sur vos revenus : quand vous gagnez plus, nous gagnons plus. Résiliable à tout moment.",
       pricing_cta: "Voir la liste d'onboarding",
       equip: "Équipements desservis : hotshots (35–40 pi) · box trucks · dry vans · flatbeds · reefers",
-      brokers_h: 'Pour les <span class="accent">brokers de chargements</span>',
+      brokers_h: 'Pour les <span class="accent">courtiers de chargements</span>',
       brokers_p: "Une capacité fiable, des transporteurs vérifiés, une paperasse propre. Nos transporteurs roulent avec une autorité MC active, une assurance vérifiée et des dossiers complets — et nous répondons au téléphone quand un chargement doit être couvert.",
       brokers_c1_h: "Transporteurs vérifiés", brokers_c1_p: "Autorité MC vérifiée auprès de la FMCSA, certificat d'assurance au dossier, W-9 et profil complétés avant le premier chargement.",
       brokers_c2_h: "Communication rapide", brokers_c2_p: "Un seul point de contact, en anglais, espagnol ou français. Confirmations de tarifs, suivis et POD sans relances.",
       brokers_c3_h: "Prêt pour le transfrontalier", brokers_c3_p: "Liaisons USA–Canada avec PARS / PAPS et FAST au besoin, pour les transporteurs équipés pour les deux côtés de la frontière.",
       brokers_cta: "Parlons de vos corridors",
       platform_h: 'Notre <span class="accent">plateforme</span>',
-      platform_p: "Nous fonctionnons avec QuickManage AI, un système de gestion de transport moderne à base d'IA : il automatise la création des chargements, les mises à jour des chauffeurs et la communication avec les brokers, centralise courriels, load boards, chats et données bancaires, et suit chaque changement pour l'analyse des marges et du service. Nous cherchons le fret sur les trois principaux load boards nord-américains.",
+      platform_p: "Nous fonctionnons avec QuickManage AI, un système de gestion de transport moderne à base d'IA : il automatise la création des chargements, les mises à jour des chauffeurs et la communication avec les courtiers, centralise courriels, load boards, chats et données bancaires, et suit chaque changement pour l'analyse des marges et du service. Nous cherchons le fret sur les trois principaux load boards nord-américains.",
       platform_qm: "Notre TMS — logiciel de dispatch IA (qm PILOT) pour la planification, le suivi, les documents, la facturation et les paiements, avec plus de 100 intégrations : ELD, load boards, comptabilité, factoring et cartes carburant.",
       platform_dat: "Le plus grand réseau de load boards en Amérique du Nord — le leader en volume, avec des données de tarifs par corridor pour négocier en position de force.",
-      platform_ts: "Truckstop pour le flatbed et le hotshot avec vérification des brokers; 123Loadboard comme troisième board au meilleur rapport qualité-prix pour les propriétaires-exploitants.",
-      platform_note: "QuickManage est le logiciel que nous utilisons; WAO CARGO est un service de dispatch indépendant, ni broker ni employeur.",
+      platform_ts: "Truckstop pour le flatbed et le hotshot avec vérification des courtiers; 123Loadboard comme troisième board au meilleur rapport qualité-prix pour les propriétaires-exploitants.",
+      platform_note: "QuickManage est le logiciel que nous utilisons; WAO CARGO est un service de dispatch indépendant, ni courtier ni employeur.",
       contact_h: 'Contact — <span class="accent">parlons-en</span>',
       contact_p: "Parlez-nous de votre camion et de vos corridors. Nous répondons en anglais, espagnol ou français — selon votre préférence.",
       form_name: "Votre nom", form_youare: "Je suis…", form_carrier: "Transporteur / propriétaire-exploitant",
-      form_broker: "Broker de chargements", form_other: "Autre", form_equip: "Équipement", form_msg: "Votre message",
+      form_broker: "Courtier de chargements", form_other: "Autre", form_equip: "Équipement", form_msg: "Votre message",
       form_send: "Envoyer — réponse sous un jour ouvrable",
       contact_fb: "Retrouvez-nous sur Facebook : WAO CARGO",
-      footer_copy: "© 2026 WAO CARGO INC — Dispatching et soutien aux transporteurs, USA et Canada. WAO CARGO est un service de dispatch indépendant, ni broker ni employeur.",
-      slogan: "Votre cargo, notre cargo…"
+      footer_copy: "© 2026 WAO CARGO INC — Dispatching et soutien aux transporteurs, USA et Canada. WAO CARGO est un service de dispatch indépendant, ni courtier ni employeur.",
+      slogan: "Votre cargo, notre cargo…",
+      contact_cta: "Ouvrir le formulaire de contact",
+      cp_h: 'Contact — <span class="accent">parlons-en</span>',
+      cp_p: "Choisissez le formulaire qui vous correspond — un pour les transporteurs, un pour les courtiers. Nous répondons en anglais, espagnol ou français.",
+      cp_carriers_h: "Transporteurs et propriétaires-exploitants",
+      cp_carriers_p: "Parlez-nous de votre camion, de votre équipement et de vos corridors.",
+      cp_carriers_cta: "Ouvrir le formulaire transporteur",
+      cp_brokers_h: "Courtiers de chargements",
+      cp_brokers_p: "Parlez-nous des chargements à couvrir et de vos corridors.",
+      cp_brokers_cta: "Ouvrir le formulaire courtier",
+      cookie_text: "Nous utilisons des témoins (cookies) pour améliorer votre visite. Les témoins non essentiels restent désactivés sauf si vous acceptez.",
+      cookie_accept: "Accepter", cookie_decline: "Refuser"
     },
     es: {
       nav_home: "Inicio", nav_services: "Servicios ▾", nav_carriers: "Para transportistas", nav_brokers: "Para brokers", nav_contact: "Contacto",
@@ -121,7 +143,18 @@
       form_send: "Enviar — respondemos en un día hábil",
       contact_fb: "Encuéntrenos en Facebook: WAO CARGO",
       footer_copy: "© 2026 WAO CARGO INC — Despacho y apoyo a transportistas, EE. UU. y Canadá. WAO CARGO es un servicio de despacho independiente, ni broker ni empleador.",
-      slogan: "Tu carga, nuestra carga…"
+      slogan: "Tu carga, nuestra carga…",
+      contact_cta: "Abrir el formulario de contacto",
+      cp_h: 'Contacto — <span class="accent">hablemos</span>',
+      cp_p: "Elija el formulario que le corresponde — uno para transportistas, otro para brokers. Respondemos en inglés, español o francés.",
+      cp_carriers_h: "Transportistas y propietarios-operadores",
+      cp_carriers_p: "Cuéntenos sobre su camión, su equipo y sus corredores.",
+      cp_carriers_cta: "Abrir el formulario de transportista",
+      cp_brokers_h: "Brokers de carga",
+      cp_brokers_p: "Cuéntenos sobre las cargas que necesita cubrir y sus corredores.",
+      cp_brokers_cta: "Abrir el formulario de broker",
+      cookie_text: "Usamos cookies para mejorar su visita. Las cookies no esenciales permanecen desactivadas a menos que usted las acepte.",
+      cookie_accept: "Aceptar", cookie_decline: "Rechazar"
     }
   };
 
@@ -174,5 +207,21 @@
     if (q && I18N[q]) initialLang = q;
     else { var saved = localStorage.getItem("wao-lang"); if (saved && I18N[saved]) initialLang = saved; }
   } catch (e) { /* storage unavailable — stay in English */ }
+  // Cookie consent banner: non-essential cookies stay off unless accepted.
+  (function () {
+    var banner = document.getElementById("cookie-banner");
+    if (!banner) return;
+    var decided = false;
+    try { decided = !!localStorage.getItem("wao-cookies"); } catch (e) { /* storage unavailable */ }
+    if (!decided) banner.style.display = "flex";
+    function choose(v) {
+      try { localStorage.setItem("wao-cookies", v); } catch (e) { /* storage unavailable */ }
+      banner.style.display = "none";
+    }
+    var a = document.getElementById("cookie-accept");
+    if (a) a.addEventListener("click", function () { choose("accepted"); });
+    var d = document.getElementById("cookie-decline");
+    if (d) d.addEventListener("click", function () { choose("declined"); });
+  })();
   applyLang(initialLang);
 })();

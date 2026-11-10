@@ -30,7 +30,7 @@
           <a href="pages/to-brokers.html" data-i18n="nav_brokers">To Brokers</a>
         </div>
       </div>
-      <a href="#contact" data-i18n="nav_contact">Contact</a>
+      <a href="pages/contact.html" data-i18n="nav_contact">Contact</a>
       <div class="lang-switch" role="group" aria-label="Language">
         <button type="button" data-lang="en" class="active">EN</button>
         <button type="button" data-lang="fr">FR</button>
@@ -99,7 +99,7 @@
         <div class="card"><h3 data-i18n="brokers_c2_h">Fast communication</h3><p data-i18n="brokers_c2_p">One point of contact, in English, Spanish or French. Rate confirmations, tracking updates and PODs without chasing.</p></div>
         <div class="card"><h3 data-i18n="brokers_c3_h">Cross-border ready</h3><p data-i18n="brokers_c3_p">USA–Canada lanes with PARS / PAPS and FAST where needed, for carriers set up to run both sides of the border.</p></div>
       </div>
-      <p style="margin-top:24px"><a class="btn btn-secondary" href="#contact" data-i18n="brokers_cta">Talk to us about your lanes</a></p>
+      <p style="margin-top:24px"><a class="btn btn-secondary" href="pages/contact.html" data-i18n="brokers_cta">Talk to us about your lanes</a></p>
     </div>
   </section>
 
@@ -122,28 +122,7 @@
     <div class="wrap">
       <h2 data-i18n="contact_h">Contact — <span class="accent">let's talk</span></h2>
       <p class="lead" data-i18n="contact_p">Tell us about your truck and your lanes. We reply in English, Spanish or French — whichever you prefer.</p>
-      <!-- TODO: wire this form to contact@waocargo.com (form handler / HubSpot form). Until then it opens the visitor's email client. -->
-      <form class="contact-form" action="mailto:contact@waocargo.com" method="post" enctype="text/plain">
-        <label for="f-name" data-i18n="form_name">Your name</label>
-        <input id="f-name" name="Name" type="text" required>
-        <label for="f-type" data-i18n="form_youare">I am a…</label>
-        <select id="f-type" name="I am">
-          <option data-i18n="form_carrier">Carrier / owner-operator</option>
-          <option data-i18n="form_broker">Load broker</option>
-          <option data-i18n="form_other">Other</option>
-        </select>
-        <label for="f-equip" data-i18n="form_equip">Equipment</label>
-        <select id="f-equip" name="Equipment">
-          <option>Hotshot (35–40 ft)</option>
-          <option>Box truck</option>
-          <option>Dry van</option>
-          <option>Flatbed</option>
-          <option>Reefer</option>
-        </select>
-        <label for="f-msg" data-i18n="form_msg">Your message</label>
-        <textarea id="f-msg" name="Message" rows="4"></textarea>
-        <p><button class="btn btn-primary" type="submit" data-i18n="form_send">Send — we reply within one business day</button></p>
-      </form>
+      <p><a class="btn btn-primary" href="pages/contact.html" data-i18n="contact_cta">Open the contact form</a></p>
       <p style="margin-top:16px">📧 <a href="mailto:contact@waocargo.com">contact@waocargo.com</a> · 📍 1876 rue Gareau, Longueuil, QC J4N 1E4, Canada · 💬 <a href="https://wa.me/14386388890">WhatsApp +1 (438) 638-8890</a> · <span data-i18n="contact_fb">Find us on Facebook: WAO CARGO</span></p>
     </div>
   </section>
@@ -208,5 +187,12 @@
   </div>
 </footer>
 <script src="script.js"></script>
+<div class="cookie-banner" id="cookie-banner" style="display:none">
+  <p data-i18n="cookie_text">We use cookies to improve your visit. Non-essential cookies stay off unless you accept.</p>
+  <div class="cookie-actions">
+    <button type="button" class="btn btn-primary" id="cookie-accept" data-i18n="cookie_accept">Accept</button>
+    <button type="button" class="btn btn-secondary" id="cookie-decline" data-i18n="cookie_decline">Decline</button>
+  </div>
+</div>
 </body>
 </html>

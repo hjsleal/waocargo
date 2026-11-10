@@ -130,7 +130,22 @@ If he meant to drop them, removing them is a one-line change — just say so.
 1. ~~User sends the 3 SVG logos → swap into `assets/`.~~ ✅ Done 2026-11-08.
 2. ~~User answers: keep QuickManage + animated hero, or drop them?~~ ✅ KEEP both (user, 2026-11-09).
 3. Fill Pixel ID + Facebook / Instagram links; ~~decide on phone number~~ (WhatsApp is the public number).
-4. ~~User pastes the HubSpot form embed code (announced in Amendment #1 but not included) → wire the contact form.~~ ⏸️ Deferred by the user 2026-11-09 — one HubSpot form shows in one language only; revisit with 3 forms (EN / FR / ES).
+4. ~~User pastes the HubSpot form embed code (announced in Amendment #1 but not included) → wire the contact form.~~ ✅ Done 2026-11-10 (Amendment #2) — two HubSpot forms by audience on a dedicated Contact page (see below); the earlier "3 forms by language" idea is superseded.
 5. Professional review of the Terms + Privacy texts.
 6. Review the home page copy (EN/FR/ES) and the 15 remaining stub pages.
 7. Deploy to Cloudflare Pages once the Cloudflare-account question is settled.
+
+---
+
+## Amendment #2 (user, 2026-11-10 — file `wao-website-amendment-2-instructions.md`)
+
+- **Splash icons replaced**: `assets/icon1.svg` (US), `icon2.svg` (FR), `icon3.svg` (ES) are the new files the user sent (Icon1-2 / icon2-2 / icon3-2).
+- **Header**: slogan now sits **beside** the logo (not under it), 22px, bold, secondary colour. Stacks under the logo again below 760px.
+- **FR "Broker" → "Courtier"** everywhere in French: `script.js` FR strings, Terms FR block. English and Spanish keep "Broker".
+- **Contact page (new `pages/contact.html`)**: the mailto form is gone from home.html. The Contact page holds the two HubSpot forms the user sent — Carriers: https://5oq67o.share-na3.hsforms.com/2rvUtuoqERQCtpfobH2mBlA — Brokers/Courtiers: https://5oq67o.share-na3.hsforms.com/27TyAukfeQwmLwha0HGEfAg — as link buttons (the share links are HubSpot-hosted form pages; no embed code was supplied). All nav "Contact" links now point to the Contact page. Home keeps a short Contact section with a button to it.
+- **Footer**: brand column (logo, company name, social icons, address, email) is now **centered** (`align-items: center; text-align: center`).
+- **Privacy page replaced** with the user's supplied content (EN/FR/ES, 11 sections, dated 2026-11-10): PIPEDA + Quebec Law 25 confirmed, Privacy Officer Hernan Sanchez, compliance@waocargo.com. The DRAFT banner is kept (professional review still pending). The bracketed address in the supplied files was rendered as the clean full address (1876 rue Gareau, Longueuil, QC J4N 1E4, Canada).
+- **Cookie consent banner added** (all 20 pages): the new Privacy text promises a banner; non-essential cookies stay off by default, choice stored in localStorage (`wao-cookies`). No tracking cookies exist yet (Pixel not installed).
+- **Freight-market reference**: the Instructions file's long freight-market section (haul types, segments, truck types, Canada/US territory division) is saved as reference only — NOT published as site content.
+- **Not received**: the user said Privacy *and* Terms files were attached, but only the 3 Privacy files arrived — the Terms page keeps the Amendment #1 draft text. Ask him to resend the Terms files if they exist.
+- **Flagged to the user (not changed)**: the supplied Privacy text says onboarding forms are "via embedded Google Forms" — the site now uses HubSpot forms. He should confirm whether to change that line to HubSpot.

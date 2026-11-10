@@ -35,9 +35,9 @@ img { max-width: 100%; height: auto; }
   max-width: 1100px; margin: 0 auto; padding: 10px 20px;
   display: flex; align-items: center; gap: 24px;
 }
-.brand { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; text-decoration: none; color: var(--white); }
+.brand { display: flex; flex-direction: row; align-items: center; gap: 16px; text-decoration: none; color: var(--white); }
 .brand img { height: 130px; width: auto; }
-.brand-slogan { color: var(--secondary); font-size: 1rem; font-weight: 600; line-height: 1.2; }
+.brand-slogan { color: var(--secondary); font-size: 22px; font-weight: 700; line-height: 1.2; }
 .brand-name { font-weight: 800; letter-spacing: .04em; font-size: 1.25rem; }
 .main-nav { margin-left: auto; display: flex; align-items: center; gap: 4px; }
 .main-nav a, .main-nav .drop-btn {
@@ -134,7 +134,7 @@ section h2 .accent { color: var(--secondary); }
 .site-footer li { margin-bottom: 6px; }
 .site-footer a { color: var(--footer-text); text-decoration: none; }
 .site-footer a:hover { text-decoration: underline; color: var(--secondary); }
-.footer-brand { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; text-align: right; }
+.footer-brand { display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; }
 .footer-brand img { height: 130px; width: auto; }
 .footer-brand .company { color: var(--footer-text); font-weight: 400; }
 .social-icons { display: flex; gap: 12px; margin-top: 8px; }
@@ -151,6 +151,8 @@ section h2 .accent { color: var(--secondary); }
 }
 @media (max-width: 760px) {
   .grid-2, .grid-3, .footer-grid { grid-template-columns: 1fr; }
+  .brand { flex-direction: column; align-items: flex-start; gap: 2px; }
+  .brand-slogan { font-size: 1rem; }
   .hero h1 { font-size: 1.9rem; }
   .main-nav { display: none; } /* TODO: mobile menu — see script.js */
   main { padding-top: 180px; }
@@ -167,3 +169,16 @@ main.splash { min-height: 100vh; display: flex; flex-direction: column; align-it
 /* ---- Legal pages ---- */
 .legal h3 { color: var(--primary); margin: 28px 0 8px; }
 .legal p { max-width: 780px; }
+
+/* ---- Cookie consent banner ---- */
+.cookie-banner { position: fixed; left: 0; right: 0; bottom: 0; z-index: 200; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 20px; background: var(--dark-bg); color: var(--white); padding: 14px 20px; font-size: .9rem; box-shadow: 0 -2px 16px rgba(0,0,0,.25); }
+.cookie-banner p { margin: 0; max-width: 640px; }
+.cookie-actions { display: flex; gap: 10px; }
+.cookie-actions .btn { padding: 8px 18px; }
+
+/* ---- Legal tables & quotes ---- */
+.legal-table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: .92rem; }
+.legal-table th, .legal-table td { border: 1px solid #d5d5d5; padding: 10px 12px; text-align: left; vertical-align: top; }
+.legal-table th { background: var(--primary); color: var(--white); }
+.legal-table td { background: var(--white); }
+.legal blockquote { margin: 16px 0; padding: 4px 20px; border-left: 4px solid var(--secondary); background: #fafafa; }
