@@ -151,8 +151,6 @@ section h2 .accent { color: var(--secondary); }
 }
 @media (max-width: 760px) {
   .grid-2, .grid-3, .footer-grid { grid-template-columns: 1fr; }
-  .brand { flex-direction: column; align-items: flex-start; gap: 2px; }
-  .brand-slogan { font-size: 1rem; }
   .hero h1 { font-size: 1.9rem; }
   .main-nav { display: none; } /* TODO: mobile menu — see script.js */
   main { padding-top: 180px; }
