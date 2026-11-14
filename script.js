@@ -4,7 +4,7 @@
 (function () {
   var I18N = {
     en: {
-      nav_home: "Home", nav_services: "Services ▾", nav_carriers: "To Carriers", nav_brokers: "To Brokers", nav_contact: "Contact",
+      nav_home: "Home", nav_services: "Services ▾", nav_carriers: "To Carriers", nav_brokers: "To Brokers", nav_contact: "Contact", menu_label: "Menu",
       hero_title: 'Your truck keeps moving. <span class="accent">We handle the rest.</span>',
       hero_lead: "Wcargo is your dispatch partner. We find the freight, negotiate the rate, and handle the paperwork — so you can focus on the road. You are, and always will be, our most precious capital.",
       cta_carrier: "Become a carrier — start here", cta_broker: "Are you a broker? Work with us",
@@ -78,7 +78,7 @@
       cookie_accept: "Accept", cookie_decline: "Decline"
     },
     fr: {
-      nav_home: "Accueil", nav_services: "Services ▾", nav_carriers: "Aux transporteurs", nav_brokers: "Aux courtiers", nav_contact: "Contact",
+      nav_home: "Accueil", nav_services: "Services ▾", nav_carriers: "Aux transporteurs", nav_brokers: "Aux courtiers", nav_contact: "Contact", menu_label: "Menu",
       hero_title: 'Votre camion continue de rouler. <span class="accent">Nous nous occupons du reste.</span>',
       hero_lead: "Wcargo est votre partenaire de dispatch. Nous trouvons le fret, négocions le tarif et gérons la paperasse — pour que vous puissiez vous concentrer sur la route. Vous êtes, et serez toujours, notre capital le plus précieux.",
       cta_carrier: "Devenir transporteur — commencez ici", cta_broker: "Vous êtes courtier ? Travaillons ensemble",
@@ -152,7 +152,7 @@
       cookie_accept: "Accepter", cookie_decline: "Refuser"
     },
     es: {
-      nav_home: "Inicio", nav_services: "Servicios ▾", nav_carriers: "Para transportistas", nav_brokers: "Para brokers", nav_contact: "Contacto",
+      nav_home: "Inicio", nav_services: "Servicios ▾", nav_carriers: "Para transportistas", nav_brokers: "Para brokers", nav_contact: "Contacto", menu_label: "Menú",
       hero_title: 'Su camión sigue en marcha. <span class="accent">Nosotros nos encargamos del resto.</span>',
       hero_lead: "Wcargo es su socio de despacho. Buscamos la carga, negociamos la tarifa y gestionamos el papeleo — para que usted se concentre en la carretera. Usted es, y siempre será, nuestro capital más precioso.",
       cta_carrier: "Ser transportista — empiece aquí", cta_broker: "¿Es broker? Trabaje con nosotros",
@@ -291,6 +291,21 @@
     if (a) a.addEventListener("click", function () { choose("accepted"); });
     var d = document.getElementById("cookie-decline");
     if (d) d.addEventListener("click", function () { choose("declined"); });
+  })();
+  // Mobile menu (hamburger): toggles the nav panel below the header.
+  (function () {
+    var toggle = document.querySelector(".menu-toggle");
+    var header = document.querySelector(".site-header");
+    if (!toggle || !header) return;
+    function setOpen(open) {
+      header.classList.toggle("nav-open", open);
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    }
+    toggle.addEventListener("click", function () { setOpen(!header.classList.contains("nav-open")); });
+    header.querySelectorAll(".main-nav a, .main-nav .lang-switch button").forEach(function (el) {
+      el.addEventListener("click", function () { setOpen(false); });
+    });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") setOpen(false); });
   })();
   applyLang(initialLang);
 })();
