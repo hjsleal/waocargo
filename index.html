@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WAO CARGO — Dispatching &amp; Carrier Support | USA &amp; Canada</title>
-<meta name="description" content="WAO CARGO finds loads, negotiates rates and handles the back office for owner-operators and small fleets — hotshots, box trucks, dry vans, flatbeds and reefers — in the USA and Canada. English, Spanish, French.">
+<title>Wcargo — Dispatching &amp; Carrier Support | USA &amp; Canada</title>
+<meta name="description" content="Wcargo finds loads, negotiates rates and handles the back office for owner-operators and small fleets — hotshots, box trucks, dry vans, flatbeds and reefers — in the USA and Canada. English, Spanish, French.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="icon" type="image/svg+xml" href="assets/wc-favicon.svg">
 </head>
 <body>
 <!-- Splash / language gateway: cargo-banner background, centered logo, 3 language flags -->
 <main class="splash">
-  <img class="splash-logo" src="assets/waocargo-hero-index.png" alt="WAO CARGO">
+  <img class="splash-logo" src="assets/wc-dark-background.svg" alt="Wcargo">
   <nav class="splash-langs" aria-label="Choose your language">
     <a href="home.html?lang=en"><img src="assets/icon1.svg" alt="English"><span>EN</span></a>
     <a href="home.html?lang=fr"><img src="assets/icon2.svg" alt="Français"><span>FR</span></a>
@@ -27,56 +27,59 @@
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <h4>Context</h4>
+        <h4 data-i18n="ft_context">Context</h4>
         <ul>
-          <li><a href="pages/freight-market.html">The freight market</a></li>
-          <li><a href="pages/future-of-transport.html">The future of transport</a></li>
-          <li><a href="pages/cftr-quebec.html">The CFTR in Quebec</a></li>
-          <li><a href="pages/regulations.html">Regulations</a></li>
+          <li><a href="pages/freight-market.html" data-i18n="ft_market">The freight market</a></li>
+          <li><a href="pages/future-of-transport.html" data-i18n="ft_future">The future of transport</a></li>
+          <li><a href="pages/cftr-quebec.html" data-i18n="ft_cftr">The CFTR in Quebec</a></li>
+          <li><a href="pages/regulations.html" data-i18n="ft_regs">Regulations</a></li>
         </ul>
       </div>
       <div>
-        <h4>Notice</h4>
+        <h4 data-i18n="ft_notice">Notice</h4>
         <ul>
-          <li><a href="pages/privacy.html">Privacy</a></li>
-          <li><a href="pages/terms-of-service.html">Terms of service</a></li>
-          <li><a href="pages/web-content.html">Web content</a></li>
-          <li><a href="pages/canada-gov.html">Canada Gov</a></li>
+          <li><a href="pages/privacy.html" data-i18n="ft_privacy">Privacy</a></li>
+          <li><a href="pages/terms-of-service.html" data-i18n="ft_terms">Terms of service</a></li>
+          <li><a href="pages/web-content.html" data-i18n="ft_webcontent">Web content</a></li>
+          <li><a href="pages/canada-gov.html" data-i18n="ft_cangov">Canada Gov</a></li>
         </ul>
       </div>
       <div>
-        <h4>Services</h4>
+        <h4 data-i18n="ft_services">Services</h4>
         <ul>
-          <li><a href="pages/to-carriers.html">To carriers</a></li>
-          <li><a href="pages/to-brokers.html">To brokers</a></li>
-          <li><a href="pages/our-platform.html">Our platform</a></li>
-          <li><a href="pages/payments.html">Payments</a></li>
+          <li><a href="pages/to-carriers.html" data-i18n="ft_tocarriers">To carriers</a></li>
+          <li><a href="pages/to-brokers.html" data-i18n="ft_tobrokers">To brokers</a></li>
+          <li><a href="pages/our-platform.html" data-i18n="ft_platform">Our platform</a></li>
+          <li><a href="pages/payments.html" data-i18n="ft_payments">Payments</a></li>
         </ul>
       </div>
       <div>
-        <h4>Integration</h4>
+        <h4 data-i18n="ft_integration">Integration</h4>
         <ul>
-          <li><a href="pages/onboarding.html">Onboarding</a></li>
-          <li><a href="pages/become-a-partner.html">Become a partner</a></li>
-          <li><a href="pages/operators.html">Operators</a></li>
-          <li><a href="pages/brokers.html">Brokers</a></li>
-          <li><a href="pages/drivers.html">Drivers</a></li>
+          <li><a href="pages/onboarding.html" data-i18n="ft_onboarding">Onboarding</a></li>
+          <li><a href="pages/become-a-partner.html" data-i18n="ft_partner">Become a partner</a></li>
+          <li><a href="pages/brokers.html" data-i18n="ft_brokers">Brokers</a></li>
+          <li><a href="pages/drivers.html" data-i18n="ft_drivers">Drivers</a></li>
         </ul>
       </div>
       <div class="footer-brand">
-        <img src="assets/logo-footer.svg" alt="WAO CARGO logo">
-        <span class="company">Wao Cargo Inc.</span>
+        <div class="footer-brand-id">
+          <img src="assets/wc-footer.svg" alt="Wcargo logo">
+          <div class="footer-brand-text">
+            <span class="company">Wcargo Inc.</span>
+            <p>1876 rue Gareau, Longueuil, QC J4N 1E4, Canada<br><a href="mailto:contact@waocargo.com">contact@waocargo.com</a></p>
+          </div>
+        </div>
         <div class="social-icons">
           <!-- TODO: replace # with the real Facebook Page and Instagram links -->
           <a href="#" aria-label="Facebook" title="Facebook (link to add)">f</a>
           <a href="#" aria-label="Instagram" title="Instagram (link to add)">ig</a>
           <a href="https://wa.me/14386388890" aria-label="WhatsApp" title="WhatsApp +1 (438) 638-8890">wa</a>
         </div>
-        <p>1876 rue Gareau, Longueuil, QC J4N 1E4, Canada<br><a href="mailto:contact@waocargo.com">contact@waocargo.com</a></p>
       </div>
     </div>
     <div class="footer-bottom">
-      <span data-i18n="footer_copy">© <span id="year">2026</span> WAO CARGO INC — Dispatching &amp; carrier support, USA &amp; Canada. WAO CARGO is an independent dispatch service, not a broker and not an employer.</span>
+      <span data-i18n="footer_copy">© <span id="year">2026</span> Wcargo Inc. — Dispatching &amp; carrier support, USA &amp; Canada. Wcargo is an independent dispatch service, not a broker and not an employer.</span>
     </div>
   </div>
 </footer>

@@ -1,4 +1,4 @@
-# WAO CARGO website — DRAFT (Option A, static site)
+# Wcargo website — DRAFT (Option A, static site)
 
 Built 2026-11-08 (Sunday evening) from the user's site spec
 (`~/workspace/user/files/waocargo_site_instructions.md` and
@@ -15,8 +15,8 @@ Favicon added the same evening (assets/favicon.png, referenced on all
 
 Amendment #1 applied 2026-11-09 (user file `Index.md`): the home page is
 now a splash gateway (see below); header logo 130px with a trilingual
-slogan and no “WAO CARGO” text; footer brand right-aligned as
-“Wao Cargo Inc.” with a 130px logo; Terms of Service and Privacy Policy
+slogan and no “Wcargo” text; footer brand right-aligned as
+“Wcargo Inc.” with a 130px logo; Terms of Service and Privacy Policy
 written in EN / FR / ES.
 
 ## How to preview
@@ -100,7 +100,7 @@ static server. No build step.
 He sent the spec twice (22:51 and 22:57, Nov 8). The second file silently
 drops two items that were in the first:
 
-- **QuickManage AI TMS + the top 3 load boards** (first file §3: "Wao Cargo
+- **QuickManage AI TMS + the top 3 load boards** (first file §3: "Wcargo
   will use the TMS QuickManage AI … and at least the main 3 loadboards")
 - **The animated message on the home page** (first file §5: "animated gift
   iconic message between images and text")
@@ -149,3 +149,7 @@ If he meant to drop them, removing them is a one-line change — just say so.
 - **Freight-market reference**: the Instructions file's long freight-market section (haul types, segments, truck types, Canada/US territory division) is saved as reference only — NOT published as site content.
 - **Not received**: the user said Privacy *and* Terms files were attached, but only the 3 Privacy files arrived — the Terms page keeps the Amendment #1 draft text. Ask him to resend the Terms files if they exist.
 - **Flagged to the user (not changed)**: the supplied Privacy text says onboarding forms are "via embedded Google Forms" — the site now uses HubSpot forms. He should confirm whether to change that line to HubSpot.
+
+## Amendment #2b (user, 2026-11-10 — same day, after his check)
+- **Footer rule: the full footer (4 link columns + brand column with logo, company name, social icons, address, email) shows on ALL pages.** The 18 stub pages previously had only the copyright line — replaced with the full footer. The splash (index.html) had no footer at all — full footer added below the gateway.
+- **Slogan: beside the logo, 22px bold, on ALL screen sizes.** The mobile rule that stacked the slogan under the logo below 760px was removed — it contradicted the instruction. (The row/22px rule itself was already live in the Amendment #2 deploy; the user was likely seeing a cached stylesheet — hard refresh Ctrl+F5 / Cmd+Shift+R.)

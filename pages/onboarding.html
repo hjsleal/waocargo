@@ -3,78 +3,106 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Onboarding — WAO CARGO</title>
+<title>Onboarding — Wcargo</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
-<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="icon" type="image/svg+xml" href="../assets/wc-favicon.svg">
 </head>
 <body>
 <header class="site-header"><div class="header-inner">
-<a class="brand" href="../home.html"><img src="../assets/logo-dark.svg" alt="WAO CARGO logo"><span class="brand-slogan" data-i18n="slogan">You cargo, our cargo…</span></a>
+<a class="brand" href="../home.html"><img src="../assets/wc-dark-background.svg" alt="Wcargo logo"><span class="brand-slogan" data-i18n="slogan">You cargo, our cargo…</span></a>
 <nav class="main-nav"><a href="../home.html" data-i18n="nav_home">Home</a><a href="contact.html" data-i18n="nav_contact">Contact</a><div class="lang-switch" role="group" aria-label="Language"><button type="button" data-lang="en" class="active">EN</button><button type="button" data-lang="fr">FR</button><button type="button" data-lang="es">ES</button></div></nav>
 </div></header>
-<main><section><div class="wrap">
-<div class="draft-note">DRAFT page (Integration) — content to be reviewed and completed before the Nov 24, 2026 launch.</div>
-<h2 style="color:var(--primary)">Onboarding</h2>
-<p class="lead">Before the first load, every carrier provides: signed dispatch service agreement, limited power of attorney, active MC authority (verified with FMCSA) + USDOT number, verified CDL domicile status, insurance certificate ($1,000,000 auto liability / $100,000 cargo, WAO CARGO named as certificate holder), signed W-9, factoring company details + Notice of Assignment, driver CDL(s), and void cheque or bank letter for QuickPay / ACH. Cross-border carriers also need BOC-3 and UCR, plus PARS / PAPS and FAST where useful.</p>
-<p style="margin-top:24px"><a class="btn btn-primary" href="../home.html">← Back to home</a></p>
-</div></section></main>
+<main>
+  <!-- Animated banner — the GET STARTED button links to the Driver Form (HubSpot carrier form) -->
+  <div class="onb-banner"><a href="https://5oq67o.share-na3.hsforms.com/2rvUtuoqERQCtpfobH2mBlA" target="_blank" rel="noopener" aria-label="Get started — open the driver form"><img src="../assets/onboarding-banner.gif" alt="Wcargo — Get started"></a></div>
+  <section class="onb"><div class="wrap">
+    <h2 style="color:var(--primary)" data-i18n="onb_h">Onboarding</h2>
+    <p class="lead" data-i18n="onb_lead">Before the first load, every carrier provides the documents below. We verify them, sign the agreement together, and set you up — then you can take your first load. You accept or refuse every load — nothing is ever forced on you.</p>
+    <h3 data-i18n="onb_docs_h">What we need from you</h3>
+    <div class="pill-row">
+      <span class="pill" data-i18n="onb_pill1">Signed dispatch service agreement</span>
+      <span class="pill" data-i18n="onb_pill2">Limited power of attorney</span>
+      <span class="pill" data-i18n="onb_pill3">MC authority (FMCSA-verified) + USDOT number</span>
+      <span class="pill" data-i18n="onb_pill4">Insurance certificate — $1,000,000 auto liability / $100,000 cargo</span>
+      <span class="pill" data-i18n="onb_pill5">Signed W-9</span>
+      <span class="pill" data-i18n="onb_pill6">Factoring company + Notice of Assignment</span>
+      <span class="pill" data-i18n="onb_pill7">Driver CDL(s)</span>
+      <span class="pill" data-i18n="onb_pill8">Void cheque or bank letter (QuickPay / ACH)</span>
+      <span class="pill" data-i18n="onb_pill9">Cross-border: BOC-3 · UCR · PARS / PAPS · FAST</span>
+    </div>
+    <p style="margin-top:16px" data-i18n="onb_ins_note">The insurance certificate must name Wcargo as certificate holder.</p>
+    <h3 data-i18n="onb_steps_h">How it works</h3>
+    <ol class="timeline">
+      <li><h4 data-i18n="onb_s1_h">Send your documents</h4><p data-i18n="onb_s1_p">Through the carrier form or by email — tell us about your truck, your equipment and your lanes.</p></li>
+      <li><h4 data-i18n="onb_s2_h">We verify</h4><p data-i18n="onb_s2_p">MC authority with FMCSA, insurance certificate and CDL status — before the first load.</p></li>
+      <li><h4 data-i18n="onb_s3_h">Sign the agreement</h4><p data-i18n="onb_s3_p">Dispatch service agreement and limited power of attorney — no setup fees, no contract lock-in.</p></li>
+      <li><h4 data-i18n="onb_s4_h">We set you up</h4><p data-i18n="onb_s4_p">Your carrier profile in QuickManage AI, factoring and QuickPay / ACH ready to go.</p></li>
+      <li><h4 data-i18n="onb_s5_h">First load</h4><p data-i18n="onb_s5_p">You accept or refuse every load — nothing is ever forced on you. We handle the rest.</p></li>
+    </ol>
+    <p style="margin-top:24px" data-i18n="onb_cta_p">Ready to roll? Send your documents through the carrier form — we reply within one business day.</p>
+    <p style="margin-top:16px"><a class="btn btn-primary" href="https://5oq67o.share-na3.hsforms.com/2rvUtuoqERQCtpfobH2mBlA" target="_blank" rel="noopener" data-i18n="cp_carriers_cta">Open the carrier form</a> <a class="btn btn-secondary" href="../home.html" data-i18n="onb_back">← Back to home</a></p>
+  </div></section>
+</main>
 <!-- Footer: 4 columns + brand/social column -->
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <h4>Context</h4>
+        <h4 data-i18n="ft_context">Context</h4>
         <ul>
-          <li><a href="freight-market.html">The freight market</a></li>
-          <li><a href="future-of-transport.html">The future of transport</a></li>
-          <li><a href="cftr-quebec.html">The CFTR in Quebec</a></li>
-          <li><a href="regulations.html">Regulations</a></li>
+          <li><a href="freight-market.html" data-i18n="ft_market">The freight market</a></li>
+          <li><a href="future-of-transport.html" data-i18n="ft_future">The future of transport</a></li>
+          <li><a href="cftr-quebec.html" data-i18n="ft_cftr">The CFTR in Quebec</a></li>
+          <li><a href="regulations.html" data-i18n="ft_regs">Regulations</a></li>
         </ul>
       </div>
       <div>
-        <h4>Notice</h4>
+        <h4 data-i18n="ft_notice">Notice</h4>
         <ul>
-          <li><a href="privacy.html">Privacy</a></li>
-          <li><a href="terms-of-service.html">Terms of service</a></li>
-          <li><a href="web-content.html">Web content</a></li>
-          <li><a href="canada-gov.html">Canada Gov</a></li>
+          <li><a href="privacy.html" data-i18n="ft_privacy">Privacy</a></li>
+          <li><a href="terms-of-service.html" data-i18n="ft_terms">Terms of service</a></li>
+          <li><a href="web-content.html" data-i18n="ft_webcontent">Web content</a></li>
+          <li><a href="canada-gov.html" data-i18n="ft_cangov">Canada Gov</a></li>
         </ul>
       </div>
       <div>
-        <h4>Services</h4>
+        <h4 data-i18n="ft_services">Services</h4>
         <ul>
-          <li><a href="to-carriers.html">To carriers</a></li>
-          <li><a href="to-brokers.html">To brokers</a></li>
-          <li><a href="our-platform.html">Our platform</a></li>
-          <li><a href="payments.html">Payments</a></li>
+          <li><a href="to-carriers.html" data-i18n="ft_tocarriers">To carriers</a></li>
+          <li><a href="to-brokers.html" data-i18n="ft_tobrokers">To brokers</a></li>
+          <li><a href="our-platform.html" data-i18n="ft_platform">Our platform</a></li>
+          <li><a href="payments.html" data-i18n="ft_payments">Payments</a></li>
         </ul>
       </div>
       <div>
-        <h4>Integration</h4>
+        <h4 data-i18n="ft_integration">Integration</h4>
         <ul>
-          <li><a href="onboarding.html">Onboarding</a></li>
-          <li><a href="become-a-partner.html">Become a partner</a></li>
-          <li><a href="operators.html">Operators</a></li>
-          <li><a href="brokers.html">Brokers</a></li>
-          <li><a href="drivers.html">Drivers</a></li>
+          <li><a href="onboarding.html" data-i18n="ft_onboarding">Onboarding</a></li>
+          <li><a href="become-a-partner.html" data-i18n="ft_partner">Become a partner</a></li>
+          <li><a href="brokers.html" data-i18n="ft_brokers">Brokers</a></li>
+          <li><a href="drivers.html" data-i18n="ft_drivers">Drivers</a></li>
         </ul>
       </div>
       <div class="footer-brand">
-        <img src="../assets/logo-footer.svg" alt="WAO CARGO logo">
-        <span class="company">Wao Cargo Inc.</span>
+        <div class="footer-brand-id">
+          <img src="../assets/wc-footer.svg" alt="Wcargo logo">
+          <div class="footer-brand-text">
+            <span class="company">Wcargo Inc.</span>
+            <p>1876 rue Gareau, Longueuil, QC J4N 1E4, Canada<br><a href="mailto:contact@waocargo.com">contact@waocargo.com</a></p>
+          </div>
+        </div>
         <div class="social-icons">
           <!-- TODO: replace # with the real Facebook Page and Instagram links -->
           <a href="#" aria-label="Facebook" title="Facebook (link to add)">f</a>
           <a href="#" aria-label="Instagram" title="Instagram (link to add)">ig</a>
           <a href="https://wa.me/14386388890" aria-label="WhatsApp" title="WhatsApp +1 (438) 638-8890">wa</a>
         </div>
-        <p>1876 rue Gareau, Longueuil, QC J4N 1E4, Canada<br><a href="mailto:contact@waocargo.com">contact@waocargo.com</a></p>
       </div>
     </div>
     <div class="footer-bottom">
-      <span data-i18n="footer_copy">© <span id="year">2026</span> WAO CARGO INC — Dispatching &amp; carrier support, USA &amp; Canada. WAO CARGO is an independent dispatch service, not a broker and not an employer.</span>
+      <span data-i18n="footer_copy">© <span id="year">2026</span> Wcargo Inc. — Dispatching &amp; carrier support, USA &amp; Canada. Wcargo is an independent dispatch service, not a broker and not an employer.</span>
     </div>
   </div>
 </footer>

@@ -1,4 +1,4 @@
-/* WAO CARGO — waocargo.com — DRAFT styles
+/* Wcargo — waocargo.com — DRAFT styles
    Spec: waocargo_site_instructions.md / waocargo_site_instructions-2.md (user, 2026-11-08)
    Font SUSE · Primary #0e0e34 · Secondary #fc410e · Backgrounds #eeeeee / #272727
    Footer background #eeeeee (spec wrote "#eeeee" — 5 digits, invalid; using #eeeeee)
@@ -32,7 +32,7 @@ img { max-width: 100%; height: auto; }
   background: var(--primary); color: var(--white);
 }
 .header-inner {
-  max-width: 1100px; margin: 0 auto; padding: 10px 20px;
+  max-width: 1100px; margin: 0 auto; padding: 0 20px;
   display: flex; align-items: center; gap: 24px;
 }
 .brand { display: flex; flex-direction: row; align-items: center; gap: 16px; text-decoration: none; color: var(--white); }
@@ -58,7 +58,7 @@ img { max-width: 100%; height: auto; }
   font: inherit; font-size: .85rem; padding: 4px 8px; cursor: pointer;
 }
 .lang-switch button.active, .lang-switch button:hover { background: var(--secondary); border-color: var(--secondary); }
-main { padding-top: 180px; }
+main { padding-top: 160px; }
 
 /* ---- Buttons: 0px radius, 15px right border in opposite colour, hover swaps ---- */
 .btn {
@@ -134,10 +134,13 @@ section h2 .accent { color: var(--secondary); }
 .site-footer li { margin-bottom: 6px; }
 .site-footer a { color: var(--footer-text); text-decoration: none; }
 .site-footer a:hover { text-decoration: underline; color: var(--secondary); }
-.footer-brand { display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; }
+.footer-brand { grid-column: 1 / -1; display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; text-align: left; padding-top: 8px; }
+.footer-brand-id { display: flex; align-items: center; gap: 20px; }
+.footer-brand-text { display: flex; flex-direction: column; gap: 4px; }
 .footer-brand img { height: 130px; width: auto; }
 .footer-brand .company { color: var(--footer-text); font-weight: 400; }
-.social-icons { display: flex; gap: 12px; margin-top: 8px; }
+.footer-brand p { margin: 0; }
+.social-icons { display: flex; gap: 12px; margin-top: 0; }
 .social-icons a {
   display: inline-flex; align-items: center; justify-content: center;
   width: 36px; height: 36px; background: var(--primary); color: var(--white);
@@ -153,7 +156,7 @@ section h2 .accent { color: var(--secondary); }
   .grid-2, .grid-3, .footer-grid { grid-template-columns: 1fr; }
   .hero h1 { font-size: 1.9rem; }
   .main-nav { display: none; } /* TODO: mobile menu — see script.js */
-  main { padding-top: 180px; }
+  main { padding-top: 160px; }
 }
 
 /* ---- Splash / language gateway (index.html) ---- */
@@ -163,6 +166,18 @@ main.splash { min-height: 100vh; display: flex; flex-direction: column; align-it
 .splash-langs a { display: flex; flex-direction: column; align-items: center; gap: 10px; text-decoration: none; color: var(--white); font-weight: 700; font-size: 1rem; }
 .splash-langs img { width: 76px; height: auto; border-radius: 4px; box-shadow: 0 2px 16px rgba(0,0,0,.45); }
 .splash-langs a:hover span { color: var(--secondary); }
+
+/* ---- Onboarding: animated banner, pills, timeline ---- */
+.onb-banner { max-width: 900px; margin: 0 auto; }
+.onb-banner img { display: block; width: 100%; height: auto; }
+.onb h3 { color: var(--primary); margin: 36px 0 4px; font-size: 1.3rem; }
+.pill-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+.pill { display: inline-block; padding: 8px 16px; border: 1px solid var(--primary); border-radius: 999px; background: var(--white); color: var(--primary); font-weight: 600; font-size: .95rem; }
+.timeline { list-style: none; margin-top: 24px; counter-reset: step; }
+.timeline li { position: relative; padding: 0 0 28px 56px; border-left: 3px solid var(--secondary); margin-left: 18px; }
+.timeline li:last-child { border-left: 3px solid transparent; padding-bottom: 0; }
+.timeline li::before { counter-increment: step; content: counter(step); position: absolute; left: -18px; top: 0; width: 36px; height: 36px; border-radius: 50%; background: var(--secondary); color: var(--white); font-weight: 800; display: flex; align-items: center; justify-content: center; }
+.timeline h4 { color: var(--primary); margin-bottom: 4px; }
 
 /* ---- Legal pages ---- */
 .legal h3 { color: var(--primary); margin: 28px 0 8px; }
