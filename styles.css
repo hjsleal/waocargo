@@ -110,6 +110,7 @@ section h2 .accent { color: var(--secondary); }
 
 /* ---- Hero + animated message ---- */
 .hero { background: var(--primary); color: var(--white); padding: 88px 0 72px; }
+.hero .wrap { padding-top: 40px; }
 .home-banner { display: block; width: 100%; height: auto; }
 .hero h1 { font-size: 2.6rem; line-height: 1.15; max-width: 720px; }
 .hero h1 .accent { color: var(--secondary); }
@@ -176,7 +177,7 @@ section h2 .accent { color: var(--secondary); }
 
 /* ---- Splash / language gateway (index.html) ---- */
 main.splash { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 56px; padding: 40px 20px; text-align: center; background: linear-gradient(rgba(14,14,52,.45), rgba(14,14,52,.45)), url("assets/cargo-banner.jpg") center/cover no-repeat var(--dark-bg); }
-.splash-logo { width: min(350px, 80vw); height: auto; }
+.splash-logo { width: min(485px, 80vw); height: auto; }
 .splash-langs { display: flex; gap: 48px; flex-wrap: wrap; justify-content: center; }
 .splash-langs a { display: flex; flex-direction: column; align-items: center; gap: 10px; text-decoration: none; color: var(--white); font-weight: 700; font-size: 1rem; }
 .splash-langs img { width: 76px; height: auto; border-radius: 4px; box-shadow: 0 2px 16px rgba(0,0,0,.45); }
